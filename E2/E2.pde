@@ -15,6 +15,7 @@ void draw()
 {
   
   h++;
+  h %= 100;
   s = 100;
   b = 100;
   //h variable in HSB represents color range 
@@ -24,5 +25,6 @@ void draw()
   rect(x, y, 10, y+weight);
   x += 5;
   //move the rect 5 pixel each time 
+  x %= 500;
   
 }
